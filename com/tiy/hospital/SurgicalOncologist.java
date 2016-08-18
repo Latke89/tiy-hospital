@@ -15,6 +15,6 @@ public class SurgicalOncologist extends HospitalDoctor implements Surgeon {
 
     public boolean operate(Patient patient) {
         patient.setSick(false);
-        return true; // successfull operation
+        return true; // successful operation
     }
 }
