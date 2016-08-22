@@ -4,7 +4,7 @@ package com.tiy.hospital;
  * Created by dbashizi on 8/16/16.
  */
 public class Patient extends Person {
-    int typeSymptom;
+    private int typeSymptom;
 
     public int getTypeSymptom() {
         return typeSymptom;

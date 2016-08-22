@@ -8,10 +8,13 @@ public class Pulmonologist extends HospitalDoctor implements Surgeon{
 		super(firstName, lastName, college);
 	}
 
-	public Diagnosis diagnose() {
-		return new Diagnosis(Diagnosis.LUNG_CANCER);
-	}
+//	public Diagnosis diagnose() {
+//		return new Diagnosis(Diagnosis.LUNG_CANCER);
+//	}
 
+	public int diagnose() {
+		return 1;
+	}
 	public boolean operate(Patient patient) {
 		patient.setSick(false);
 		return true; // successful operation

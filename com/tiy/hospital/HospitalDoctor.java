@@ -3,7 +3,9 @@ package com.tiy.hospital;
 /**
  * Created by dbashizi on 8/16/16.
  */
-public abstract class HospitalDoctor extends Person implements Doctor {
+public abstract class HospitalDoctor extends Person
+        implements Doctor
+{
     private String college;
 
     public HospitalDoctor(String firstName, String lastName, String college) {
@@ -11,8 +13,13 @@ public abstract class HospitalDoctor extends Person implements Doctor {
         this.college = college;
     }
 
+    public boolean treatPatient(Patient sickGuy) {
+        sickGuy.setSick(false);
+        return true;
+    }
 
-	public String getCollege() {
+
+    public String getCollege() {
         return college;
     }
 

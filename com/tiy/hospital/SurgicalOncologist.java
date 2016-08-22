@@ -9,8 +9,11 @@ public class SurgicalOncologist extends HospitalDoctor implements Surgeon {
         super(firstName, lastName, college);
     }
 
-    public Diagnosis diagnose() {
-        return new Diagnosis(Diagnosis.BRAIN_CANCER);
+//    public Diagnosis diagnose() {
+//        return new Diagnosis(Diagnosis.BRAIN_CANCER);
+//    }
+    public int diagnose() {
+        return 2;
     }
 
     public boolean operate(Patient patient) {

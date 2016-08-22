@@ -12,6 +12,10 @@ public class Hospital {
 		return hospitalName;
 	}
 
+	public void makeDoctor() {
+
+	}
+
 	public void setHospitalName(String hospitalName) {
 		this.hospitalName = hospitalName;
 	}
